@@ -9,47 +9,47 @@ import {
 } from "phosphor-react";
 import { motion } from 'framer-motion'
 
-const TIMELINE = [
-  {
-    date: 'Dec 01, 2022',
-    title: 'Joined Hive.one',
-    description: 'Joined Hive team as frontend engineer to build a new way to explore Twitter',
-    link: 'https://twitter.com/thelifeofrishi/status/1598692245401501696'
-  },
-  {
-    date: 'Nov 12, 2022',
-    title: 'Pika crossed $1K in monthly recurring revenue',
-    description: '9 months into building Pika, it is my first side-project to cross such big milestone'
-  },
-  {
-    date: 'Jan 02, 2022',
-    title: 'Launched Pika.style as an open-source project',
-    description: 'Built this small tool to save my time designing better screenshots'
-  },
-]
+// const TIMELINE = [
+//   {
+//     date: 'Dec 01, 2022',
+//     title: 'Joined Hive.one',
+//     description: 'Joined Hive team as frontend engineer to build a new way to explore Twitter',
+//     link: 'https://twitter.com/thelifeofrishi/status/1598692245401501696'
+//   },
+//   {
+//     date: 'Nov 12, 2022',
+//     title: 'Pika crossed $1K in monthly recurring revenue',
+//     description: '9 months into building Pika, it is my first side-project to cross such big milestone'
+//   },
+//   {
+//     date: 'Jan 02, 2022',
+//     title: 'Launched Pika.style as an open-source project',
+//     description: 'Built this small tool to save my time designing better screenshots'
+//   },
+// ]
 
-const IMAGES = [
-  {
-    src: "/images/pages/rishi-goa-yellow.jpg",
-    place: "Goa",
-    className: "rotate-[-2deg]",
-  },
-  {
-    src: "/images/pages/rishi-holi-rishikesh.JPG",
-    place: "Rishikesh",
-    className: "rotate-[2deg]",
-  },
-  {
-    src: "/images/pages/rishi-triund.JPG",
-    place: "Triund",
-    className: "rotate-[-2deg]",
-  },
-  {
-    src: "/images/pages/rishi-goa.JPG",
-    place: "Goa",
-    className: "rotate-[2deg]",
-  }
-];
+// const IMAGES = [
+//   {
+//     src: "/images/pages/rishi-goa-yellow.jpg",
+//     place: "Goa",
+//     className: "rotate-[-2deg]",
+//   },
+//   {
+//     src: "/images/pages/rishi-holi-rishikesh.JPG",
+//     place: "Rishikesh",
+//     className: "rotate-[2deg]",
+//   },
+//   {
+//     src: "/images/pages/rishi-triund.JPG",
+//     place: "Triund",
+//     className: "rotate-[-2deg]",
+//   },
+//   {
+//     src: "/images/pages/rishi-goa.JPG",
+//     place: "Goa",
+//     className: "rotate-[2deg]",
+//   }
+// ];
 
 const ContentWrapper = ({ children, className, width }) => (
   <div
@@ -83,34 +83,31 @@ export default function Home() {
               <span className="text-gray-400 dark:text-gray-400">
                 Hi 👋, I'm{" "}
               </span>
-              Rishi Mohan!
+              Erwann Bestard
             </h2>
             <div className="post-content">
               <ul className="!mb-0">
-                <li>Designer, front-end engineer, entrepreneur</li>
+                <li>Software engineer, electronics</li>
                 <li>
                   Worked at{" "}
-                  <Link href="https://bigbinary.com" target="_blank">
-                    BigBinary
+                  <Link href="https://www.thalesgroup.com/fr" target="_blank">
+                    Thales{" "}
                   </Link>
-                  ,{" "}
-                  <Link href="https://instahyre.com" target="_blank">
-                    Instahyre
+                  and on some{" "}
+                  <Link href="/projects/dronespot">
+                    freelance projects
                   </Link>
                 </li>
-                <li>Love to travel, explore and capture life</li>
-                <li>
-                  Kinda active on Twitter{" "}
+                <li>Currently enjoying working at{" "}
                   <Link
-                    href="https://twitter.com/thelifeofrishi"
+                    href="https://dashdoc.com/"
                     target="_blank"
                   >
-                    @thelifeofrishi
+                    Dashdoc
                   </Link>
                 </li>
                 <li>
-                  Currently building{" "}
-                  <Link href="https://pika.style">Pika.style</Link> in side
+                  Looking for an internship abroad !
                 </li>
               </ul>
             </div>
@@ -118,7 +115,7 @@ export default function Home() {
         </ContentWrapper>
       </motion.div>
 
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{
           opacity: 1,
@@ -155,9 +152,9 @@ export default function Home() {
             </div>
           ))}
         </ContentWrapper>
-      </motion.div>
+      </motion.div> */}
 
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{
           opacity: 1,
@@ -206,7 +203,7 @@ export default function Home() {
             ))}
           </div>
         </ContentWrapper>
-      </motion.div>
+      </motion.div> */}
     </div>
   );
 }

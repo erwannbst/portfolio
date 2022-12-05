@@ -2,15 +2,12 @@ import {useState} from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import {
-  Newspaper,
   IdentificationCard,
   House,
-  Note,
   BracketsCurly,
-  Flask,
-  Compass,
   ArrowSquareOut,
   At,
+  LinkedinLogo,
   TwitterLogo,
   InstagramLogo,
   GithubLogo,
@@ -31,40 +28,40 @@ export default function Sidebar() {
       icon: <House size={16} />,
       active: pathname === "/",
     },
-    {
-      title: "Blog",
-      url: "/blog",
-      icon: <Note size={16} />,
-      active: pathname.includes("/blog"),
-    },
+    // {
+    //   title: "Blog",
+    //   url: "/blog",
+    //   icon: <Note size={16} />,
+    //   active: pathname.includes("/blog"),
+    // },
     {
       title: "Side Projects",
       url: "/projects",
       icon: <BracketsCurly size={16} />,
       active: pathname.includes("/projects"),
     },
-    {
-      title: "Experiments",
-      url: "/experiments",
-      icon: <Flask size={16} />,
-      active: pathname.includes("/experiments"),
-    },
-    {
-      title: "Travel Map",
-      url: "/map",
-      icon: <Compass size={16} />,
-      active: pathname === "/map",
-    },
-    {
-      title: "Newsletter",
-      url: "https://thelifeofrishi.substack.com",
-      icon: <Newspaper size={16} />,
-      active: false,
-      external: true,
-    },
+    // {
+    //   title: "Experiments",
+    //   url: "/experiments",
+    //   icon: <Flask size={16} />,
+    //   active: pathname.includes("/experiments"),
+    // },
+    // {
+    //   title: "Travel Map",
+    //   url: "/map",
+    //   icon: <Compass size={16} />,
+    //   active: pathname === "/map",
+    // },
+    // {
+    //   title: "Newsletter",
+    //   url: "https://thelifeofrishi.substack.com",
+    //   icon: <Newspaper size={16} />,
+    //   active: false,
+    //   external: true,
+    // },
     {
       title: "Resume",
-      url: "https://peerlist.io/rishimohan",
+      url: "https://www.linkedin.com/in/erwannbst/",
       icon: <IdentificationCard size={16} />,
       active: false,
       external: true,
@@ -74,29 +71,34 @@ export default function Sidebar() {
   const SOCIAL = [
     {
       title: "Github",
-      url: `https://github.com/rishimohan`,
+      url: `https://github.com/erwannbst`,
       icon: <GithubLogo size={16} />,
       external: true,
     },
+    // {
+    //   title: "Twitter",
+    //   url: `https://twitter.com/${process.env.twitter}`,
+    //   icon: <TwitterLogo size={16} />,
+    //   external: true,
+    // },
+    // {
+    //   title: "Instagram",
+    //   url: `https://instagram.com/${process.env.instagram}`,
+    //   icon: <InstagramLogo size={16} />,
+    //   external: true,
+    // },
     {
-      title: "Twitter",
-      url: `https://twitter.com/${process.env.twitter}`,
-      icon: <TwitterLogo size={16} />,
+      title: "LinkedIn",
+      url: `https://www.linkedin.com/in/erwannbst/`,
+      icon: <LinkedinLogo size={16} />,
       external: true,
     },
     {
-      title: "Instagram",
-      url: `https://instagram.com/${process.env.instagram}`,
-      icon: <InstagramLogo size={16} />,
-      external: true,
-    },
-
-    {
-      title: "hi@rishimohan.me",
-      url: `mailto:hi@rishimohan.me`,
+      title: "erwann.bst@gmail.com",
+      url: `mailto:erwann.bst@gmail.com`,
       icon: <At size={16} />,
       external: false,
-    },
+    }
   ];
 
   const RenderLinks = ({ sectionTitle, sectionItems }) => {

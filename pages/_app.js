@@ -10,7 +10,7 @@ import {useRouter} from "next/router";
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
   const canonicalUrl = (
-    `https://rishimohan.me` + (router.asPath === "/" ? "" : router.asPath)
+    `https://bestard.fr` + (router.asPath === "/" ? "" : router.asPath)
   ).split("?")[0];
 
   return (
@@ -25,27 +25,22 @@ function MyApp({ Component, pageProps }) {
           />
         </Head>
         <DefaultSeo
-          title="Hi, I'm Rishi Mohan!"
-          description="I'm a designer and front-end engineer by profession. I build SaaS apps, like to travel, take photos and binge try Cafes and Restaurants."
+          title="Hi, I'm Erwann Bestard!"
+          description="I'm a software engineer student"
           canonical={canonicalUrl}
           openGraph={{
-            site_name: "Hi, I'm Rishi Mohan!",
-            title: "Hi, I'm Rishi Mohan!",
+            site_name: "Hi, I'm Erwann Bestard",
+            title: "Hi, I'm Erwann Bestard",
             description:
-              "I'm a designer and front-end engineer by profession. I build SaaS apps, like to travel, take photos and binge try Cafes and Restaurants.",
+              "I'm a software engineer student",
             images: [
               {
-                url: "https://rishimohan.me/images/site/meta.jpg",
+                url: "https://dronespot.fr/res/logo.png",
                 width: 800,
                 height: 600,
-                alt: "Kizie for Twitter",
+                alt: "Drone Spot",
               },
             ],
-          }}
-          twitter={{
-            handle: "@thelifeofrishi",
-            site: "@thelifeofrishi",
-            cardType: "summary_large_image",
           }}
           additionalLinkTags={[
             {

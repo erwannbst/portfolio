@@ -1,6 +1,8 @@
 import Head from "next/head";
 import {NextSeo} from "next-seo";
 
+// Unused
+
 export default function Home() {
   return (
     <>
