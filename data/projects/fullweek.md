@@ -22,5 +22,4 @@ A minimum viable product order to create a calendar-based app to better organize
 ---
 
 Links:
-- [Code on Github](https://github.com/rishimohan/lil-ui)
-- [Docs and Preview](https://lil.rishimohan.me)
+- [Landing webpage](https://fullweek.fr)
