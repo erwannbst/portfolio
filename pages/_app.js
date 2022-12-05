@@ -26,19 +26,19 @@ function MyApp({ Component, pageProps }) {
         </Head>
         <DefaultSeo
           title="Hi, I'm Erwann Bestard!"
-          description="I'm a software engineer student"
+          description="A software engineering student"
           canonical={canonicalUrl}
           openGraph={{
             site_name: "Hi, I'm Erwann Bestard",
             title: "Hi, I'm Erwann Bestard",
             description:
-              "I'm a software engineer student",
+              "A software engineering student",
             images: [
               {
-                url: "https://dronespot.fr/res/logo.png",
-                width: 800,
+                url: "https://bestard.fr/images/pages/erwann.jpg",
+                width: 600,
                 height: 600,
-                alt: "Drone Spot",
+                alt: "Erwann",
               },
             ],
           }}
