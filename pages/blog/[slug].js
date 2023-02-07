@@ -13,11 +13,11 @@ export default function Post({ allPosts, post, morePosts, preview }) {
   return (
     <div className="flex w-full">
       <NextSeo
-        title={`${post.title} - Rishi Mohan`}
+        title={`${post.title} - Erwann Bestard`}
         description={post.excerpt || post.content.slice(0, 200) || ""}
         openGraph={{
-          site_name: `${post.title} - Rishi Mohan`,
-          title: `${post.title} - Rishi Mohan`,
+          site_name: `${post.title} - Erwann Bestard`,
+          title: `${post.title} - Erwann Bestard`,
           description: post.excerpt || post.content.slice(0, 200) || "",
           images: [
             {

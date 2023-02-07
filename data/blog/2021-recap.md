@@ -8,7 +8,7 @@ excerpt: The good, the bads and alrights of 2021
 
 ---
 
-![2021 Recap - Rishi Mohan](/images/posts/2021.png)
+![2021 Recap - Erwann Bestard](/images/posts/2021.png)
 
 2021 started with me being in Jodhpur.
 For the last 4 years, I've been spending New Year's

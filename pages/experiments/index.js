@@ -34,11 +34,11 @@ export default function Experiments() {
 
   return <>
     <NextSeo
-      title="Design & Code Explorations - Rishi Mohan"
+      title="Design & Code Explorations - Erwann Bestard"
       description="A collection of design and code experiments, a college where student are ideas. Would the ideas graduate? Let's find out!"
       openGraph={{
-        site_name: "Hi, I'm Rishi Mohan!",
-        title: "Design and Code Explorations - Rishi Mohan",
+        site_name: "Hi, I'm Erwann Bestard!",
+        title: "Design and Code Explorations - Erwann Bestard",
         description:
           "A collection of design and code experiments, a college where student are ideas. Would the ideas graduate? Let's find out!",
       }}

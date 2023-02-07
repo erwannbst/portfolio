@@ -7,11 +7,11 @@ export default function Home() {
   return (
     <>
       <NextSeo
-        title="Travel Map – Rishi Mohan"
+        title="Travel Map – Erwann Bestard"
         description="I've created this page to visualize all the locations I've been so far."
         openGraph={{
-          site_name: "Travel Map – Rishi Mohan",
-          title: "Travel Map – Rishi Mohan",
+          site_name: "Travel Map – Erwann Bestard",
+          title: "Travel Map – Erwann Bestard",
           description:
             "I've created this page to visualize all the locations I've been so far.",
         }}

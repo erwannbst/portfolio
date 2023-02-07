@@ -10,10 +10,10 @@ image: /assets/img/posts/rishi.jpg
 ---
 
 
-![Rishi Mohan](/images/posts/rishi.jpg)
+![Erwann Bestard](/images/posts/rishi.jpg)
 
 
-Hola! I am Rishi Mohan, I like designing beautiful interfaces for web and mobile. I work as UI Engineer at [BigBinary](http://bigbinary.com) in day, in night I create things like [these](/projects/), listen to music, or read Quora.  You can [read more about me here](/about/).
+Hola! I am Erwann Bestard, I like designing beautiful interfaces for web and mobile. I work as UI Engineer at [BigBinary](http://bigbinary.com) in day, in night I create things like [these](/projects/), listen to music, or read Quora.  You can [read more about me here](/about/).
 
 ## What this blog is about
 
