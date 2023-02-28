@@ -92,12 +92,6 @@ export default function Sidebar() {
       url: `https://www.linkedin.com/in/erwannbst/`,
       icon: <LinkedinLogo size={16} />,
       external: true,
-    },
-    {
-      title: "erwann.bst@gmail.com",
-      url: `mailto:erwann.bst@gmail.com`,
-      icon: <At size={16} />,
-      external: false,
     }
   ];
 
