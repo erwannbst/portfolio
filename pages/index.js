@@ -50,7 +50,7 @@ const TIMELINE = [
 const FORMATION = [
   {
     date: "2021 - 2023",
-    title: "Ingeenering School Master",
+    title: "Engineering School Master",
     description: "Software engineering, computer science, statistics, cloud computing",
     place: "IMT Atlantique (Ex Ecole des Mines), Nantes",
   },
