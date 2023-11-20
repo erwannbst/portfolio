@@ -16,4 +16,4 @@ Mobile app available on iOS and Android to share best places to fly your drone
 
 ![DroneSpot Landscape](/images/work/show/dronespot-landscape.png)
 
-A web app is still online but no longer maintained since 2019. It is available at [https://dronespot.fr](https://dronespot.fr)
+A web app is available too ! [https://dronespot.fr](https://dronespot.fr)
