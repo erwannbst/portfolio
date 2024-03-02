@@ -4,6 +4,7 @@ slug: dronespot
 title: "Drone Spot"
 tech: ["React Native", "Firebase", "Next.js", "Tailwind CSS"]
 icon: "/images/work/show/dronespot-icon.jpg"
+web: "https://dronespot.fr"
 ios: "https://apps.apple.com/fr/app/drone-spot-m%C3%A9t%C3%A9o-et-carte/id1348877960"
 index: 1
 
