@@ -1,7 +1,7 @@
-import {useRouter} from 'next/router';
+import { useRouter } from "next/router";
 import { getPostBySlug, getAllPosts } from "pages/api/blog";
 import md2html from "lib/md2html";
-import { BlogList, PostContent } from 'components';
+import { BlogList, PostContent } from "components";
 import { NextSeo } from "next-seo";
 
 export default function Post({ allPosts, post, morePosts, preview }) {
@@ -21,18 +21,18 @@ export default function Post({ allPosts, post, morePosts, preview }) {
           description: post.excerpt || post.content.slice(0, 200) || "",
           images: [
             {
-              url: post.ogImage ?? "https://rishimohan.vercel.app/images/site/meta.jpg",
+              url: post.ogImage ?? "", //https://rishimohan.vercel.app/images/site/meta.jpg",
               width: 800,
               height: 600,
-              alt: "Kizie for Twitter",
+              alt: "Erwann Bestard",
             },
           ],
         }}
-        twitter={{
-          handle: "@thelifeofrishi",
-          site: "@thelifeofrishi",
-          cardType: "summary_large_image",
-        }}
+        // twitter={{
+        //   handle: "@thelifeofrishi",
+        //   site: "@thelifeofrishi",
+        //   cardType: "summary_large_image",
+        // }}
       />
       <BlogList data={allPosts} activeSlug={post?.slug} />
       <PostContent post={post} />
@@ -50,7 +50,7 @@ export async function getStaticProps({ params }) {
     "excerpt",
     "content",
     "link",
-    "ogImage"
+    "ogImage",
   ]);
 
   const post = getPostBySlug(params.slug, [
@@ -61,7 +61,7 @@ export async function getStaticProps({ params }) {
     "content",
     "excerpt",
     "link",
-    "ogImage"
+    "ogImage",
   ]);
 
   const content = await md2html(post.content || post.excerpt || "");

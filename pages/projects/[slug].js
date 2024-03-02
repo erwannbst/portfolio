@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { WorkList, WorkContent } from "components";
-import {NextSeo} from "next-seo"
-import {getAllPosts, getPostBySlug} from "pages/api/projects";
+import { NextSeo } from "next-seo";
+import { getAllPosts, getPostBySlug } from "pages/api/projects";
 import md2html from "lib/md2html";
 
 export default function Post({ allPosts, post }) {
@@ -15,11 +15,11 @@ export default function Post({ allPosts, post }) {
     <div className="flex w-full">
       <NextSeo
         title={`${post.title} - Erwann Bestard`}
-        description={post.content.slice(0, 200)?.replace(/<[^>]*>?/gm, '') || ""}
+        description={post.content.slice(0, 200)?.replace(/<[^>]*>?/gm, "") || ""}
         openGraph={{
           site_name: `${post.title} - Erwann Bestard`,
           title: `${post.title} - Erwann Bestard`,
-          description: post.content.slice(0, 200)?.replace(/<[^>]*>?/gm, '') || "",
+          description: post.content.slice(0, 200)?.replace(/<[^>]*>?/gm, "") || "",
         }}
       />
       <WorkList allPosts={allPosts} activeSlug={post?.slug} />
@@ -38,7 +38,7 @@ export async function getStaticProps({ params }) {
     "excerpt",
     "content",
     "link",
-    "icon"
+    "icon",
   ]);
 
   const post = getPostBySlug(params.slug, [
@@ -52,7 +52,8 @@ export async function getStaticProps({ params }) {
     "tech",
     "web",
     "ios",
-    "icon"
+    "github",
+    "icon",
   ]);
 
   const content = await md2html(post.content || post.excerpt || "");

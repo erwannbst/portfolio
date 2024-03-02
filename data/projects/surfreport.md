@@ -4,7 +4,7 @@ slug: surfreport
 title: "Surf reports"
 tech: ["Raspberry", "Python", "Electronic"]
 icon: "/images/work/show/surfreport_icon.png"
-index: 2
+index: 8
 
 ---
 

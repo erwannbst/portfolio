@@ -1,4 +1,4 @@
-import {useState} from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import {
@@ -12,14 +12,14 @@ import {
   InstagramLogo,
   GithubLogo,
 } from "phosphor-react";
-import clsx from 'clsx'
+import clsx from "clsx";
 import { useTheme } from "next-themes";
 import { motion } from "framer-motion";
 
 export default function Sidebar() {
   const { pathname } = useRouter();
   const [mobileNav, showMobileNav] = useState(false);
-  const {theme, setTheme} = useTheme();
+  const { theme, setTheme } = useTheme();
 
   const LINKS = [
     {
@@ -92,17 +92,13 @@ export default function Sidebar() {
       url: `https://www.linkedin.com/in/erwannbst/`,
       icon: <LinkedinLogo size={16} />,
       external: true,
-    }
+    },
   ];
 
   const RenderLinks = ({ sectionTitle, sectionItems }) => {
     return (
-      <div className='mb-2'>
-        {sectionTitle ? (
-          <h4 className="px-4 mt-4 mb-2 text-gray-500">{sectionTitle}</h4>
-        ) : (
-          ""
-        )}
+      <div className="mb-2">
+        {sectionTitle ? <h4 className="px-4 mt-4 mb-2 text-gray-500">{sectionTitle}</h4> : ""}
         <div>
           {sectionItems.map((link) => (
             <div className="px-2" key={link.title}>
@@ -131,7 +127,7 @@ export default function Sidebar() {
         </div>
       </div>
     );
-  }
+  };
 
   const renderPrefs = () => {
     return (
@@ -151,13 +147,13 @@ export default function Sidebar() {
         </div>
       </div>
     );
-  }
+  };
 
   return (
     <>
       <motion.aside
         initial={{ opacity: 0, x: -200 }}
-        animate={{ opacity: 1, x: 0, transition: { duration: .35 }}}
+        animate={{ opacity: 1, x: 0, transition: { duration: 0.35 } }}
         className="h-screen sticky top-0 overflow-auto bg-gray-100 dark:bg-gray-900 pt-6 pb-10 md:flex flex-col flex-none hidden text-sm w-full max-w-[220px] px-1 border-r border-gray-200/50 dark:border-gray-800/50"
       >
         <RenderLinks sectionItems={LINKS} />
