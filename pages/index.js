@@ -49,9 +49,10 @@ const TIMELINE = [
 
 const FORMATION = [
   {
-    date: "2021 - 2023",
+    date: "2021 - 2024",
     title: "Engineering School Master",
-    description: "Software engineering, computer science, statistics, cloud computing",
+    description:
+      "Software engineering, computer science, statistics, cloud computing, machine learning, ...",
     place: "IMT Atlantique (Ex Ecole des Mines), Nantes",
   },
   {
@@ -134,7 +135,7 @@ export default function Home() {
                     Dashdoc
                   </Link>
                 </li>
-                <li>Looking for an internship abroad !</li>
+                <li>Open to new opportunities !</li>
               </ul>
             </div>
           </div>
