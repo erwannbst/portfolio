@@ -11,7 +11,7 @@ index: 8
 
 ![banniere](https://github.com/erwannbst/imtoundra/assets/16354899/58aae6c8-b9eb-4a58-ba8d-2208d1498d1e)
 
-IMToundra is a project that aims to monitor the environment and detect animals in the Toundra house. It is composed of two units: the first unit is located inside the Toundra house and is responsible for detecting animals and monitoring the environment. The second unit is located outside the Toundra house and is responsible for sending the data to the cloud.
+IMToundra is a project that aims to monitor the environment and detect animals in the Toundra house. It consists of two units: the first unit is located inside the Toundra House and is responsible for detecting animals and monitoring the environment. The second unit is located outside the Toundra house and is responsible for sending the data to the cloud.
 
 ## Flowchart
 
@@ -68,7 +68,7 @@ It has no internet access and sends the data to the second unit using LoRa.
 #### Second unit
 
 This second unit is located outside the Toundra house and is responsible for sending the data to the cloud.
-It has internet access and sends the data to the cloud using Wi-Fi.
+It has internet access and uses Wi-Fi to send the data to the cloud.
 
 - Raspberry Pi Zero W
 - Ra-02 LoRa module (SX1278)
@@ -77,7 +77,7 @@ It has internet access and sends the data to the cloud using Wi-Fi.
 
 ## Software
 
-Several micro services to detect animals and send analytics to a database.
+Several microservices to detect animals and send analysis to a database.
 
 - Image recognition
 - Encoding
