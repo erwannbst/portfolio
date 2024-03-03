@@ -9,13 +9,21 @@ index: 8
 
 ---
 
-![banniere](https://github.com/erwannbst/imtoundra/assets/16354899/58aae6c8-b9eb-4a58-ba8d-2208d1498d1e)
+<img
+  src="https://github.com/erwannbst/imtoundra/assets/16354899/58aae6c8-b9eb-4a58-ba8d-2208d1498d1e"
+  alt="IMToundra banner"
+  title="IMToundra banner"
+  />
 
 IMToundra is a project that aims to monitor the environment and detect animals in the Toundra house. It consists of two units: the first unit is located inside the Toundra House and is responsible for detecting animals and monitoring the environment. The second unit is located outside the Toundra house and is responsible for sending the data to the cloud.
 
 ## Flowchart
 
-![schematic](https://github.com/erwannbst/imtoundra/assets/16354899/977da74f-3836-42ef-9b3d-d24325303846)
+<img
+  src="https://github.com/erwannbst/imtoundra/assets/16354899/977da74f-3836-42ef-9b3d-d24325303846"
+  alt="IMToundra schema"
+  title="IMToundra schema"
+  />
 
 #### 1. Animal detection
 ***This step is not implemented in this project.***
@@ -52,7 +60,7 @@ It has no internet access and sends the data to the second unit using LoRa.
   src="https://github.com/erwannbst/imtoundra/assets/16354899/07a51419-0ccc-47a3-a6e7-425202ede7c4"
   alt="ENS160"
   title="ENS160"
-  style="display: inline-block; width: 250px"
+  style="display: inline-block; width: 250px;"
   />
 
 - LED for visual feedback
@@ -61,7 +69,7 @@ It has no internet access and sends the data to the second unit using LoRa.
   src="https://github.com/erwannbst/imtoundra/assets/16354899/89a290d7-6e87-47ea-ad91-12d788398494"
   alt="SX1278"
   title="SX1278"
-  style="display: inline-block; width: 250px"
+  style="display: inline-block; width: 250px;"
   />
 
 
@@ -73,7 +81,12 @@ It has internet access and uses Wi-Fi to send the data to the cloud.
 - Raspberry Pi Zero W
 - Ra-02 LoRa module (SX1278)
 
-![schematic](https://github.com/erwannbst/imtoundra/assets/16354899/12b72760-f707-435e-a4b3-8423cff42c1e)
+
+<img
+  src="https://github.com/erwannbst/imtoundra/assets/16354899/12b72760-f707-435e-a4b3-8423cff42c1e"
+  alt="IMToundra schema"
+  title="IMToundra schema"
+  />
 
 ## Software
 
@@ -138,10 +151,4 @@ Build the container
 
 Run the database container
 `docker run -d -p 5432:5432 imtoundra-db`
-
-## Demo
-
-
-
-https://github.com/erwannbst/imtoundra/assets/16354899/9cfe55c0-f409-4bfd-89cf-dd367feab4fa
 
