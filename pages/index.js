@@ -72,24 +72,28 @@ const FORMATION = [
 
 const IMAGES = [
   {
+    src: "/images/work/show/imtoundra-icon.jpg",
+    place: "Toundra x IMT Atlantique",
+    className: "rotate-[2deg]",
+    project: "imtoundra",
+  },
+  {
     src: "/images/work/show/drone_zoom.jpg",
     place: "Drone",
     className: "rotate-[-2deg]",
-  },
-  {
-    src: "/images/work/show/fullweek-screenshot-animation.png",
-    place: "Fullweek mobile app",
-    className: "rotate-[2deg]",
-  },
-  {
-    src: "/images/work/show/surfreport_side.jpg",
-    place: "Surf report",
-    className: "rotate-[-2deg]",
+    project: "drone",
   },
   {
     src: "/images/work/show/dronespot-landscape.png",
     place: "DroneSpot",
     className: "rotate-[2deg]",
+    project: "dronespot",
+  },
+  {
+    src: "/images/work/show/surfreport_side.jpg",
+    place: "Surf report",
+    className: "rotate-[-2deg]",
+    project: "surfreport",
   },
 ];
 
@@ -261,25 +265,27 @@ export default function Home() {
 
         <ContentWrapper className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 my-6 md:my-12 justify-center gap-5 md:gap-10 !max-w-[960px]">
           {IMAGES?.map((item) => (
-            <div
-              key={item.src}
-              className={clsx(
-                item?.className,
-                "relative border p-[4px] shadow-[0_0_32px_rgba(0,0,0,0.1)] rounded-[12px] dark:border-gray-700 h-64"
-              )}
-            >
-              <Image
-                src={item?.src}
-                alt={item?.place}
-                className="rounded-[9px] object-cover"
-                loading="lazy"
-                fill
-              />
-              <div className="font-mono text-xs absolute bottom-[4%] left-[4%] inline-flex bg-white/90 backdrop-blur rounded-[10px] px-2 py-px items-center dark:text-black">
-                <MapPin size={14} className="mr-1" />
-                {item?.place}
+            <a key={item.src} href={`/projects/${item.project}`}>
+              <div
+                key={item.src}
+                className={clsx(
+                  item?.className,
+                  "relative border p-[4px] shadow-[0_0_32px_rgba(0,0,0,0.1)] rounded-[12px] dark:border-gray-700 h-64"
+                )}
+              >
+                <Image
+                  src={item?.src}
+                  alt={item?.place}
+                  className="rounded-[9px] object-cover"
+                  loading="lazy"
+                  fill
+                />
+                <div className="font-mono text-xs absolute bottom-[4%] left-[4%] inline-flex bg-white/90 backdrop-blur rounded-[10px] px-2 py-px items-center dark:text-black">
+                  <MapPin size={14} className="mr-1" />
+                  {item?.place}
+                </div>
               </div>
-            </div>
+            </a>
           ))}
         </ContentWrapper>
       </motion.div>
