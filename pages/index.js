@@ -87,10 +87,10 @@ const IMAGES = [
     project: "imtoundra",
   },
   {
-    src: "/images/work/show/drone_zoom.jpg",
-    place: "Drone",
+    src: "/images/work/show/mistral-icon.png",
+    place: "Mistral Chat",
     className: "rotate-[-2deg]",
-    project: "drone",
+    project: "mistral",
   },
   {
     src: "/images/work/show/dronespot-landscape.png",
