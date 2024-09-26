@@ -136,19 +136,44 @@ export default function Home() {
               Erwann Bestard
             </h2>
             <div className="post-content">
-              <ul className="!mb-0">
-                <li>Software engineer</li>
-                <li>
-                  Worked at Thales, Dashdoc and on some{" "}
-                  <Link href="/projects/dronespot">personal or freelance projects</Link>
+              <ul className="!mb-0 list-none pl-0">
+                <li className="flex items-start mb-2">
+                  <span className="mr-2">💻</span>
+                  <span>
+                    <strong>Passionate software engineer</strong> with a focus on{" "}
+                    <strong>web technologies</strong>
+                  </span>
                 </li>
-                <li>
-                  Currently enjoying working at{" "}
-                  <Link href="https://dashdoc.com/" target="_blank">
-                    Dashdoc
-                  </Link>
+                <li className="flex items-start mb-2">
+                  <span className="mr-2">🚀</span>
+                  <span>
+                    Developed various{" "}
+                    <Link href="/projects">
+                      <strong>personal and freelance projects</strong>
+                    </Link>
+                    , including{" "}
+                    <Link href="/projects/dronespot">
+                      <strong>DroneSpot</strong>
+                    </Link>
+                  </span>
                 </li>
-                <li>Open to new opportunities !</li>
+                <li className="flex items-start mb-2">
+                  <span className="mr-2">🚛</span>
+                  <span>
+                    Currently enjoying working at{" "}
+                    <Link href="https://dashdoc.com/" target="_blank">
+                      <strong>Dashdoc</strong>
+                    </Link>
+                    , contributing to <strong>digitalizing the trucking industry</strong>
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2">🤝</span>
+                  <span>
+                    Open to <strong>exciting opportunities</strong> and{" "}
+                    <strong>collaborations</strong>!
+                  </span>
+                </li>
               </ul>
             </div>
           </div>
