@@ -13,13 +13,21 @@ import { motion } from "framer-motion";
 
 const TIMELINE = [
   {
+    date: "Apr 2017 -> Now",
+    title: "DroneSpot - Mobile App Owner",
+    description:
+      "Developed and launched a mobile (and web) app for drone pilots to discover and share flying spots. React Native, Supabase, Expo, Next.js",
+    link: "https://dronespot.fr/",
+    highlight: true,
+  },
+  {
     date: "Feb 2022 -> Now",
-    title: "Software engineer apprenticeship at Dashdoc",
+    title: "Software engineer at Dashdoc",
     description:
       "Development of a web and mobile app for truckers. React Native, CircleCI, Python",
     link: "https://dashdoc.com/",
+    highlight: true,
   },
-
   {
     date: "2020 -> 2022",
     title: "Volunteer firefighter",
@@ -54,6 +62,7 @@ const FORMATION = [
     description:
       "Software engineering, computer science, statistics, cloud computing, machine learning, ...",
     place: "IMT Atlantique (Ex Ecole des Mines), Nantes",
+    highlight: true,
   },
   {
     date: "2019 - 2021",
@@ -128,10 +137,10 @@ export default function Home() {
             </h2>
             <div className="post-content">
               <ul className="!mb-0">
-                <li>Software engineer, electronics</li>
+                <li>Software engineer</li>
                 <li>
                   Worked at Thales, Dashdoc and on some{" "}
-                  <Link href="/projects/dronespot">freelance projects</Link>
+                  <Link href="/projects/dronespot">personal or freelance projects</Link>
                 </li>
                 <li>
                   Currently enjoying working at{" "}
@@ -220,7 +229,12 @@ export default function Home() {
           <div className="relative pl-8">
             <div className="h-full w-[1px] bg-gray-200 dark:bg-gray-800 left-[10px] top-[5px] absolute"></div>
             {TIMELINE?.map((item, index) => (
-              <div key={item.title + index} className="mb-10 relative">
+              <div
+                key={item.title + index}
+                className={`mb-10 relative ${
+                  item.highlight ? "bg-blue-100 dark:bg-blue-700/10 p-4 rounded-lg" : ""
+                }`}
+              >
                 <div className="w-3 h-3 rounded-full absolute left-[-30px] top-[16px]">
                   <ArrowCircleRight
                     size={18}
@@ -230,7 +244,9 @@ export default function Home() {
                 <p className="opacity-40 text-xs">{item.date}</p>
 
                 <h3 className="leading-tight mb-1 font-semibold text-sm md:text-base inline-block">
-                  <span className="">{item.title}</span>
+                  <span className={item.highlight ? "text-blue-600 dark:text-blue-300" : ""}>
+                    {item.title}
+                  </span>
                   {item?.link ? (
                     <Link href={item.link} target="_blank">
                       <span className="inline-block ml-1 opacity-80">
