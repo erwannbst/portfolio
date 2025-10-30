@@ -10,6 +10,7 @@ async function generate() {
     "!data/*.md",
     "!pages/_*.js",
     "!pages/api",
+    "!pages/styx/**",
   ]);
 
   const sitemap = `

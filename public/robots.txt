@@ -1,0 +1,11 @@
+# robots.txt for bestard.fr
+
+User-agent: *
+Allow: /
+
+# Disallow Styx app pages from being indexed
+Disallow: /styx/
+
+# Sitemap location
+Sitemap: https://bestard.fr/sitemap.xml
+
