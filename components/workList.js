@@ -47,7 +47,23 @@ export default function WorkList({ allPosts, activeSlug }) {
                     {post?.title?.slice(0, 1)}
                   </div>
                 )}
-                <h2 className={clsx("font-semibold ml-3")}>{post.title}</h2>
+                <div className="flex flex-col ml-3">
+                  <h2 className={clsx("font-semibold")}>{post.title}</h2>
+                  <div
+                    className={clsx(
+                      "text-xs font-semibold mt-1",
+                      activeSlug == post.slug ? "opacity-60" : "opacity-30"
+                    )}
+                  >
+                    {new Date(
+                      post?.date.split(" ").slice(0, -1).join(" ")
+                    ).toLocaleDateString("en-US", {
+                      year: "numeric",
+                      month: "short",
+                      day: "numeric",
+                    })}
+                  </div>
+                </div>
               </article>
             </Link>
           </div>
